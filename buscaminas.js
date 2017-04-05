@@ -3,9 +3,12 @@ var arreglo = [];
 function bombas(){
     var i=0;
     for(i=0; i<=16; i++){ 
-      arreglo[i]= "zombie-vuelta.jpg";  
+      arreglo[i]= "grunge.jpg";  
     }
-    
+    arreglo[3]="zombie-vuelta.jpg";
+    arreglo[10]="zombie-vuelta.jpg";
+    arreglo[5]="zombie-vuelta.jpg";
+    arreglo[14]="zombie-vuelta.jpg";
 
     
 }
@@ -13,5 +16,5 @@ function bombas(){
 function abrir(imagen) {
     var indice = imagen.id;
     console.log(indice);
-    imagen.src = arreglo[indice]; //bia las imagenes. Todo bien hasta este punto. Checar porque no puedo poner imagen.id
+    imagen.src = arreglo[indice]; 
 }
